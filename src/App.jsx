@@ -1,22 +1,47 @@
 import './App.css';
-import {inventory} from './constants/inventory.js';
+import {soldTv} from './constants/inventory.js';
+import {boughtTv} from  './constants/inventory.js';
+import {toSellTv} from './constants/inventory.js';
+
 
 
 
 function App() {
-function soldTv() {
-    const soldTv = inventory[0].sold;
-    soldTv.map(inventory[0].sold.length)
-    console.log(soldTv)
-    return 'Er zijn ' + (soldTv) + 'tv\'s verkocht'
+// function soldTv() {
+//     let soldTv = 0
+//     soldTv.filter(inventory[0].sold)
+    // const soldTv = inventory.map(inventory);
+    // soldTv.map(inventory[0].sold.length)
+    // console.log(soldTv)
+    // return 'Er zijn ' + (soldTv) + 'tv\'s verkocht'
+// };
+//
+// function boughtTv () {
+//     const boughtTv = inventory[0].originalStock;
+//     boughtTv
+
 }
-soldTv()
+
+// soldTv()
     return (
         <>
-            <h1>Tech it easy dashboard</h1>
-            <p>Verkocht overzicht</p>
-            <div>Aantal verkochte producten</div>
-            {soldTv()}
+            <header>
+                <section>
+                    <h1>Tech it easy dashboard</h1>
+                    <p>Verkocht overzicht</p>
+                    {soldTv()}
+                    {boughtTv()}
+                    {toSell()}
+                </section>
+            </header>
+            <main>
+                <section>
+
+                </section>
+            </main>
+            <footer>
+
+            </footer>
         </>
 )
 
