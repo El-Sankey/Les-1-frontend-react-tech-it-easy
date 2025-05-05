@@ -1,37 +1,36 @@
 import './App.css';
-import {soldTv} from './constants/inventory.js';
-import {boughtTv} from  './constants/inventory.js';
-import {toSellTv} from './constants/inventory.js';
+import './constants/inventory.js';
+import soldTv from "./soldTv.js";
+import stockTv from "./stockTv.js";
 
-
+// import toSellTv from "./soldTv.js";
 
 
 function App() {
-// function soldTv() {
-//     let soldTv = 0
-//     soldTv.filter(inventory[0].sold)
-    // const soldTv = inventory.map(inventory);
-    // soldTv.map(inventory[0].sold.length)
-    // console.log(soldTv)
-    // return 'Er zijn ' + (soldTv) + 'tv\'s verkocht'
-// };
-//
-// function boughtTv () {
-//     const boughtTv = inventory[0].originalStock;
-//     boughtTv
+    // const soldTv = inventory.sold;
+    // return <p>Aantal verkcohte producten</p> + {soldTv};
 
-}
+    // const stockTv = inventory.originalStock;
+    // return <p>Aantal ingekochte producten</p> + {stockTv}
 
-// soldTv()
+    // let toSellTv;
+    // toSellTv = stockTv - soldTv;
+    // return <p>`Aantal verkochte producten ${toSellTv}`</p>
+
     return (
         <>
+
             <header>
+                <h1>Tech it easy dashboard</h1>
                 <section>
-                    <h1>Tech it easy dashboard</h1>
-                    <p>Verkocht overzicht</p>
-                    {soldTv()}
-                    {boughtTv()}
-                    {toSell()}
+                <h2>Verkocht overzicht</h2>
+                    <div className="section1">
+                        <div className="soldTv"><p>Aantal verkochte produkten</p></div>
+                        {soldTv()}
+                        <div className="stockTv"><p>Aantal ingekochte producten</p></div>
+                        {stockTv()}
+                        <div className="toSellTv"><p>Aantal te verkopen producten</p></div>
+                    </div>
                 </section>
             </header>
             <main>
@@ -43,7 +42,7 @@ function App() {
 
             </footer>
         </>
-)
+    )
 
 }
 
