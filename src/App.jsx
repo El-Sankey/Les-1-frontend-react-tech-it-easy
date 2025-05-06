@@ -2,11 +2,11 @@ import './App.css';
 import './constants/inventory.js';
 import soldTv from "./soldTv.js";
 import stockTv from "./stockTv.js";
-
 // import toSellTv from "./soldTv.js";
 
 
 function App() {
+
     // const soldTv = inventory.sold;
     // return <p>Aantal verkcohte producten</p> + {soldTv};
 
