@@ -1,18 +1,47 @@
 .section1 {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-
+    flex-flow: row wrap;
+    height: 23vh;
+    justify-content: space-evenly;
 }
+
 .soldTv {
-    display: flex;
     border: 1px solid green;
+    background-color: rgba(0, 255, 0, 0.2);
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
 }
 .stockTv {
+    border: 1px solid green;
     display: flex;
-    border: 1px solid lightblue;
+    background-color: lightblue;
+    flex-flow: column wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
 }
 .toSellTv {
+    border: 1px solid green;
     display: flex;
-    border: 1px solid mediumpurple;
+    background-color: rebeccapurple;
+    flex-flow: column wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
 }
+img {
+    height: 30%;
+    width: 20vw;
+}
+.img-1{
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*img {*/
+/*    background-image: url('https://media.s-bol.com/71r1kjwlLkWO/1200x793.jpg');*/
+/*}*/

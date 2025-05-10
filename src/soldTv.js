@@ -1,31 +1,40 @@
 import "./constants/inventory.js";
 
+function soldTv(Inventory) {
+    let totalSold;
+    totalSold = Inventory.reduce((sum, tv) => sum + tv.sold, 0);
+    console.log({totalSold});
+    return totalSold;
+}
+// soldTv()
+export default soldTv;
 
+//=====================================================================
 // function soldTv(inventory) {
-//     const totalSoldTv = inventory.reduce((total, inventory) => {
-//         return total + inventory.sold;
-//     }, 0);
-//     console.log(totalSoldTv)
-//
+//     const {sold: totalSold} = inventory; {
+//     console.log(totalSold);
+//     }
+//     return totalSold;
 // }
-//
 // soldTv();
 // export default soldTv;
-//=====================================================================
-function soldTv(inventory) {
-    const totalSold = inventory.reduce(
-        (acc, inventory) => acc + inventory.sold, 0,
-    )
-    console.log(totalSold)
-}
 
-soldTv();
-export default soldTv;
+//=====================================================================
+// function soldTv(inventory) {
+//     let totalSoldTv = []
+//     for (let i = 0; i < inventory.length; i++) {
+//         totalSoldTv += inventory[i].sold;
+//     }
+//     return totalSoldTv;
+// }
+// soldTv();
+// export default soldTv;
+
 //====================================================================
 // function soldTv(inventory) {
 //     let totalSold = 0
-//     inventory.forEach((item) => {
-//         if (item.sold) totalSold++;
+//     inventory.forEach((inventory) => {
+//         if (inventory.sold) totalSold++;
 //         console.log(totalSold);
 //     })
 //     return totalSold;
@@ -33,7 +42,3 @@ export default soldTv;
 // soldTv();
 //
 // export default soldTv;
-
-
-
-

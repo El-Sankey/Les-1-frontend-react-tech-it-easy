@@ -1,24 +1,24 @@
 import "./constants/inventory.js";
 
-
 function stockTv(inventory) {
-    const totalStock = inventory.reduce((total, inventory) => {
-        return total + inventory.sold
-    }, 0);
-console.log(totalStock)
+    let totalStock;
+    totalStock = inventory.reduce((sum, tv) => sum + tv.originalStock, 0);
+    console.log({totalStock});
+    return totalStock
 }
-export default stockTv
-// =====================================================================
+// stockTv();
+export default stockTv;
+
+// // =====================================================================
 // function stockTv(inventory) {
-//     const totalStock = inventory.reduce((inventory.originalStock)=> {
+//     const {originalStock: totalStock} = inventory;{
 //         console.log(totalStock);
-//     }, 0)
-//     r
-//     return totalStock + inventory.sold
-//
+//     }
+//     return totalStock;
 // }
 // stockTv();
 // export default stockTv;
+
 // ====================================================================
 // function stockTv(inventory) {
 //     if (!Array.isArray(inventory)){
