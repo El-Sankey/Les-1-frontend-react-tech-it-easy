@@ -34,7 +34,7 @@ function App() {
                             <h3>{stockTv(inventory)}</h3>
                         </div>
                         <div className="toSellTv">
-                            <h3>Aantal te verkopen producten</h3>
+                            <h3>Aantal te verkopen <br/> producten</h3>
                             <h3>{toSellTv(inventory)}</h3>
                         </div>
                     </div>
