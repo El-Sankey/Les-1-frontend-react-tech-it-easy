@@ -1,36 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================= section1 ====================*/
+
 .section1 {
     display: flex;
-    flex-flow: row wrap;
-    height: 23vh;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-basis: 50px;
+    height: 40vh;
+    width: 120%;
+    gap: 6%;
+    margin-top: 30px;
+    margin-left: 7.5%;
 }
 
 .soldTv {
-    border: 1px solid green;
-    background-color: rgba(0, 255, 0, 0.2);
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 0, 0.1);
     display: flex;
     flex-flow: column wrap;
     text-align: center;
     align-content: center;
     justify-content: center;
+    flex-basis: 20%;
+    width: 80%;
+
 }
 .stockTv {
-    border: 1px solid green;
+    border: 2px solid green;
+    border-radius: 5px;
     display: flex;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 225, 0.2);
     flex-flow: column wrap;
     text-align: center;
     align-content: center;
     justify-content: center;
+    flex-basis: 20%;
+    width: 80%;
+
 }
 .toSellTv {
-    border: 1px solid green;
+    border: 2px solid green;
+    border-radius: 5px;
     display: flex;
-    background-color: rebeccapurple;
+    background-color: rgba(160, 32,240, 0.3);
     flex-flow: column wrap;
     text-align: center;
     align-content: center;
     justify-content: center;
+    flex-basis: 20%;
+    width: 80%;
+    
 }
 img {
     height: 30%;
@@ -42,6 +66,5 @@ img {
     flex-shrink: 1;
 }
 
-/*img {*/
-/*    background-image: url('https://media.s-bol.com/71r1kjwlLkWO/1200x793.jpg');*/
-/*}*/
+/*================= section2 ====================*/
+
