@@ -1,15 +1,19 @@
 import './App.css';
 import './constants/inventory.js';
 import {bestSellingTv, inventory} from "./constants/inventory.js";
-import soldTv from "./soldTv.js";
-import stockTv from "./stockTv.js";
-import {toSellTv} from "./toSellTv.js";
+import soldTv from "./helpers/soldTv.js";
+import stockTv from "./helpers/stockTv.js";
+import {toSellTv} from "./helpers/toSellTv.js";
+import showOutcomeInConsole from './constants/oefenbestand.js';
 
 
 function App() {
 
-    // cont soldTv = inventory.sold;
-    // return <p>Aantal verkcohte producten</p> + {soldTv};
+    showOutcomeInConsole()
+
+
+    // cont  = inventory.sold;
+
 
     // const stockTv = inventory.originalStock;
     // return <p>Aantal ingekochte producten</p> + {stockTv}
@@ -44,19 +48,24 @@ function App() {
                 <section>
                     <div className="section2">
                         <h2>Beste verkochte Tv</h2>
-                        <div className="img-1">
+                        <div className="bstSellerCnt">
                             <img src="https://image.coolblue.nl/max/500x500/products/1786196" alt="tv image"/>
                             <h3>{inventory[3].type.name}</h3>
                             <h2>{inventory[3].price}</h2>
                             <p>{inventory[3].availableSizes.length}</p>
-                            <img src="./assets/check.png" alt="checked-sign"/>{bestSellingTv.options[0].name}
-                            <img src="./assets/minus.png" alt="minus-sign"/>{bestSellingTv.options[1].name}
-                            <img src="./assets/check.png" alt="checked-sign"/>{bestSellingTv.options[2].name}
-                            <img src="./assets/check.png" alt="checked-sign"/>{bestSellingTv.options[3].name}
-                            <img src="./assets/minus.png" alt="minus-sign"/>{bestSellingTv.options[4].name}
+                            <span className="bestSellerImg">
+                                <img src="src/assets/check.png" alt="checked-sign"/>{bestSellingTv.options[0].name}
+                                <img src="src/assets/minus.png" alt="minus-sign"/>{bestSellingTv.options[1].name}
+                                <img src="src/assets/check.png" alt="checked-sign"/>{bestSellingTv.options[2].name}
+                                <img src="src/assets/check.png" alt="checked-sign"/>{bestSellingTv.options[3].name}
+                                <img src="src/assets/minus.png" alt="minus-sign"/>{bestSellingTv.options[4].name}
+                            </span>
                         </div>
                     </div>
                 </section>
+                <div>
+                    <h3>{inventory.name}</h3>
+                </div>
             </main>
             <footer>
 

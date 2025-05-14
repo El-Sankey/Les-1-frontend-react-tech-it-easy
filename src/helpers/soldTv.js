@@ -1,4 +1,4 @@
-import "./constants/inventory.js";
+import "../constants/inventory.js";
 
 function soldTv(Inventory) {
     let totalSold;

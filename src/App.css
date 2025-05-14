@@ -7,11 +7,12 @@
 /*================= section1 ====================*/
 
 .section1 {
+    border: 2px dot-dash;
     display: flex;
     flex-direction: row;
     flex-basis: 50px;
-    height: 40vh;
-    width: 120%;
+    height: 35vh;
+    width: 100%;
     gap: 6%;
     margin-top: 30px;
     margin-left: 7.5%;
@@ -20,7 +21,7 @@
 .soldTv {
     border: 2px solid green;
     border-radius: 5px;
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: rgba(0, 255, 0, 0.09);
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -28,13 +29,12 @@
     justify-content: space-around;
     flex-basis: 20%;
     width: 80%;
-
 }
 .stockTv {
     border: 2px solid green;
     border-radius: 5px;
     display: flex;
-    background-color: rgba(0, 0, 225, 0.2);
+    background-color: rgba(0, 0, 225, 0.1);
     flex-flow: column wrap;
     text-align: center;
     align-content: center;
@@ -48,7 +48,7 @@
     border: 2px solid green;
     border-radius: 5px;
     display: flex;
-    background-color: rgba(160, 32,240, 0.3);
+    background-color: rgba(160, 32,240, 0.1);
     flex-flow: column wrap;
     text-align: center;
     align-content: center;
@@ -57,14 +57,24 @@
     width: 80%;
     
 }
+.bstSellerCnt{
+    display: flex;
+    border: 2px dashed;
+    border-radius: 5px;
+    height: 10%;
+    width: auto;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 img {
     height: 30%;
     width: 20vw;
 }
-.img-1{
-    flex-basis: 100px;
-    flex-grow: 0;
-    flex-shrink: 1;
+.bestSellerImg {
+    display: flex;
+    height: 60px;
+    width: 10px;
 }
 
 /*================= section2 ====================*/
