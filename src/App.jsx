@@ -1,16 +1,18 @@
 import './App.css';
 import './constants/inventory.js';
 import {bestSellingTv as tv, inventory} from "./constants/inventory.js";
-import soldTv from "./helpers/soldTv.js";
-import stockTv from "./helpers/stockTv.js";
-import {toSellTv} from "./helpers/toSellTv.js";
-import {showOutcomeInConsole} from './constants/oefenbestand.js';
+import soldTv from './helpers/soldTv.js';
+import stockTv from './helpers/stockTv.js';
+import {toSellTv} from './helpers/toSellTv.js';
+import {showOutcomeInConsole} from './constants/showOutcomeInConsole.js';
 // import {availableSizes} from "./helpers/availableSizes.js";
 
 
 function App() {
 
     showOutcomeInConsole()
+    toSellTv()
+    soldTv()
     // availableSizes()
 
 
@@ -85,6 +87,12 @@ function App() {
                         </div>
                     </article>
                 </section>
+                <article>
+                    <img src={inventory.sourceImg[1]} alt="tv-img"/>
+                    <h3>{tv.name} - {tv.type}</h3>
+                    <h2>{tv.price}</h2>
+                    <p>{tv.availableSizes}</p>
+                </article>
                 <section>
                     <h2>Alle tvs</h2>
                     <button type="button" onClick>Meest verkochte tv</button>
@@ -104,7 +112,3 @@ function App() {
 
 
 export default App
-
-
-
-

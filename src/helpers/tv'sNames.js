@@ -1,22 +1,20 @@
+console.log('========== opdracht 2a ==========')
 
-export function tvsName(tv) {
-    return `${tv.name}`;
-}
+export let tvsName;
+tvsName = tv => `${tv.brand} ${tv.type} - ${tv.name}`;
 // Arrow function
 // export function tvsName = tv => `${tv.name}` or
 // export const tvsName = tv => `${tv[3].name}`;
 
 
-//
 // export function tvsBrand(tv) {
 //     return `${tv.brand}`;
 // }
 // // Arrow function
 // // export function tvsBrand = tv => `${tv.brand}`
 // // export const tvsName = tv => `${tv[3].brand}`;
-//
-//
-//
+
+
 // export function tvsType(tv) {
 //     return `${tv.type}`
 // }
